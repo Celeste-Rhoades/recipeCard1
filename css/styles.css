@@ -163,7 +163,9 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 54%, 90%);
-    padding: 40px;
+    padding: 60px;
+    flex-direction: column;
+    gap: 10px;
   }
   body {
     min-width: 748px;
@@ -180,7 +182,7 @@ footer {
     border-radius: 20px;
   }
   .imageContainer {
-    padding: 30px 40px 0 20px;
+    padding: 25px 40px 0 20px;
   }
   .image {
     max-width: 100%;
@@ -197,5 +199,15 @@ footer {
   }
   .nutrition {
     padding-bottom: 30px;
+  }
+  footer {
+    margin: 20px;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
   }
 }
