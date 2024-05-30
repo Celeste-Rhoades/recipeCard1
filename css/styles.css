@@ -14,14 +14,13 @@ body {
 .mobile {
   height: auto;
   width: 375px;
-  border: 1px solid #ccc;
+
   background-color: hsl(0, 0%, 100%);
   font-family: Outfit;
   color: hsl(30, 10%, 34%);
 }
 .image {
-  height: 171px;
-  width: 375px;
+  max-width: 100%;
 }
 .text {
   padding: 0 30px;
@@ -79,11 +78,11 @@ h2 {
 .ing li {
   padding-left: 20px;
   line-height: 1.5;
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
 .ing {
   border-bottom: 1px solid hsl(30, 18%, 87%);
-  padding: 17px 30px;
+  padding: 20px 0;
 }
 .instructions {
   padding: 25px 0;
@@ -121,8 +120,8 @@ table {
 th {
   font-weight: 400;
 }
-tr {
-  border-bottom: 1pt solid hsl(30, 18%, 87%);
+.line {
+  border-top: 1pt solid hsl(30, 18%, 87%);
 }
 td {
   color: hsl(14, 45%, 36%);
@@ -142,10 +141,61 @@ th div {
 td div {
   margin-left: 30px;
 }
+footer {
+  margin: 40px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 1440px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    padding: 40px;
+  }
+  body {
+    min-width: 748px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 748px;
+    border-radius: 20px;
+  }
+  .imageContainer {
+    padding: 30px 40px 0 20px;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  th div {
+    margin-right: 10px;
+  }
+
+  td div {
+    margin-left: 200px;
+  }
+  .nutrition {
+    padding-bottom: 30px;
+  }
 }
